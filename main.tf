@@ -1,6 +1,6 @@
 data "tfe_outputs" "workspace_a_outputs" {
-  organization = "your_organization_name"
-  workspace    = "Workspace_A_Name"
+  organization = "Demo-DDI"
+  workspace    = "tfeworkspace1"
 }
 
 resource "azurerm_resource_group" "example" {
