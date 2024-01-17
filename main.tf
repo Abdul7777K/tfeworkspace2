@@ -5,5 +5,5 @@ data "tfe_outputs" "workspace_a_outputs" {
 
 resource "azurerm_resource_group" "example" {
   name     = "example-resources"
-  location = data.tfe_outputs.workspace_a_outputs.values["rg-tfe"]
+  location = data.tfe_outputs.workspace_a_outputs.values.rg-tfe
 }
